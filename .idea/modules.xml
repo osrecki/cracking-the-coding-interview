@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cracking-the-coding-interview.iml" filepath="$PROJECT_DIR$/.idea/modules/cracking-the-coding-interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cracking-the-coding-interview_main.iml" filepath="$PROJECT_DIR$/.idea/modules/cracking-the-coding-interview_main.iml" group="cracking-the-coding-interview" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cracking-the-coding-interview_test.iml" filepath="$PROJECT_DIR$/.idea/modules/cracking-the-coding-interview_test.iml" group="cracking-the-coding-interview" />
+    </modules>
+  </component>
+</project>
