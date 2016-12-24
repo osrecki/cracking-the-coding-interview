@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
  * Date:    21/12/2016
  */
 public class TestHelper {
+  @SuppressWarnings("unchecked")
   public static <T> List<T> testMethodsResults(Class klass, String methodName, Object... params) {
     List<Method> methods = testMethods(klass, methodName);
     List<T> results = new ArrayList<>(methods.size());
@@ -23,6 +24,9 @@ public class TestHelper {
       }
     } catch(IllegalAccessException | InvocationTargetException e) {
       e.printStackTrace();
+
+      if(e.getCause() instanceof RuntimeException)
+        throw (RuntimeException) e.getCause();
     }
 
     return results;
