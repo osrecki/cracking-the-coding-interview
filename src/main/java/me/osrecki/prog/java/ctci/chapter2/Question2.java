@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
  * Author:    Dinko Osrecki
  * Date:      23/12/2016
  */
-class Question2 {
+public class Question2 {
   /**
    * Idea:  Iterative solution with two pointers. First, one moves k elements
    *        into the list and then they move together until the first one
@@ -16,7 +16,7 @@ class Question2 {
    * Time:  O(N)
    * Space: O(1)
    */
-  static ConnectedList.Node<Integer> kthToLast1(ConnectedList.Node<Integer> head, int k) {
+  public static ConnectedList.Node<Integer> kthToLast1(ConnectedList.Node<Integer> head, int k) {
     ConnectedList.Node<Integer> runner = head;
     for(int i = 0; i <= k; i++) {
       if(runner == null) throw new NoSuchElementException();
@@ -35,7 +35,7 @@ class Question2 {
    * Time:  O(N)
    * Space: O(N)
    */
-  static ConnectedList.Node<Integer> kthToLast2(ConnectedList.Node<Integer> head, int k) {
+  public static ConnectedList.Node<Integer> kthToLast2(ConnectedList.Node<Integer> head, int k) {
     ConnectedList.Node<Integer> kthToLast = _kthToLastRec(head, k, new Counter());
 
     if(kthToLast == null) throw new NoSuchElementException();
