@@ -14,11 +14,15 @@ class BinaryTree {
   static class Node {
     int value;
     Node left, right;
+    Node parent;
 
     Node(int value, Node left, Node right) {
       this.value  = value;
       this.left   = left;
       this.right  = right;
+
+      if(left != null) left.parent = this;
+      if(right != null) right.parent = this;
     }
   }
 }
